@@ -5,13 +5,14 @@
 ## Installation
 
 1. Run `npm install`
-1. Run `cp .env.development.local_template .env.development.local`
-1. Run `cp .env.local_template .env.local`
-1. In _.env.local_:
+2. Run `cp .env.development.local_template .env.development.local`
+3. Run `cp .env.test.local_template .env.test.local`
+4. Run `cp .env.local_template .env.local`
+5. In _.env.local_ and _.env.test.local_:
 
 - add long, hard-to-guess strings as the values for `NEXTAUTH_SECRET` and `REVALIDATION_SECRET`
 
-  - command to generate a random string: `openssl rand -base64 32`
+- command to generate a random string: `openssl rand -base64 32`
 
 ## Running the App
 
