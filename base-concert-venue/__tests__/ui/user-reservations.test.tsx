@@ -21,7 +21,7 @@ test("Displays no reservations and purchase tickets button when no reservations 
 
   expect(purchaseButton).toBeInTheDocument();
 
-  const ticketsHeading = screen.getByRole("heading", {
+  const ticketsHeading = screen.queryByRole("heading", {
     name: /your tickets/i,
   });
 
